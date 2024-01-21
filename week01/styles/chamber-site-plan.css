@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-VariableFont_slnt,wght.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-VariableFont_wght.ttf") format("ttf");
+}
+
+#body-font {
+    font-family: "Inter", sans-serif;
+}
+
+#header-font {
+    font-family: "Raleway", sans-serif;
+}
+
+#color1 {
+    color: #084b7e;
+}
+
+#color2 {
+    color: #2468b0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
