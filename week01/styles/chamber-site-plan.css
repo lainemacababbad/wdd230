@@ -8,6 +8,15 @@
     src: url("Raleway-VariableFont_wght.ttf") format("ttf");
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    background-color: #2f3e46;
+  }
+
 #body-font {
     font-family: "Inter", sans-serif;
 }
