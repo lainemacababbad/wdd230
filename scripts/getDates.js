@@ -7,3 +7,12 @@ currentYearElement.innerHTML = `&copy;${currentYear} Lalaine Macababbad | PH CA 
 const lastModifiedElement = document.querySelector('#lastModified');
 const lastModified = document.lastModified;
 lastModifiedElement.textContent = `Last Modified: ${lastModified}`;
+
+// hamburger menu
+const hamburgerMenu = document.querySelector('#hamburger_menu');
+const navigation = document.querySelector('.navigation');
+
+hamburgerMenu.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamburgerMenu.classList.toggle('open');
+});

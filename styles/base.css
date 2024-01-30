@@ -26,19 +26,46 @@ header img {
   box-shadow: 5px 5px 2.5px #000;
 }
 
-nav {
-  background-color: #354f52;
+/* Hamburger Menu */
+#hamburger_menu {
+  font-size: 2rem;
+	border: none;
+	background: none;
+	color: #fff;
+ 	position: absolute;
+	top: 16px;
+	right: 16px;
+  cursor: pointer;
 }
 
-nav a {
+#hamburger_menu::before {
+	content: "\2630";
+}
+
+#hamburger_menu.open::before {
+	content: "✖︎";
+    color: white;
+}
+
+.navigation {
+  background-color: #354f52;
+  display: none;
+}
+
+.navigation.open {
+  display: block; /* when hamburger menu is clicked, it shows the nav */
+}
+
+.navigation a {
   display: flex;
+  flex-direction: column;
   color: #cad2c5;
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
 }
 
-nav a:hover {
+.navigation  a:hover {
   background-color: #84a98c;
   color: black;
 }

@@ -1,14 +1,19 @@
 @media only screen and (min-width: 600px) {
-  nav {
+  .navigation, .navigation.open {
     display: flex;
     justify-content: space-around;
   }
 
-  nav a {
+  .navigation a {
     display: inline-block;
   }
 
   .container {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Hide hamburger button */
+  #hamburger_menu {
+		display: none; 
+	}
 }
