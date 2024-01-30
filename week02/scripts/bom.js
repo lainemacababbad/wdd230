@@ -1,10 +1,15 @@
+
+
+
 const input = document.querySelector('#favchap');
-const button = document.querySelector('submit');
+const button = document.querySelector('#submit');
 const list = document.querySelector('#list');
 
 button.addEventListener("click", () => {
     // check to make sure the input is not blank before doing the following remaining tasks in this list using an if block,
     // otherwise provide a message or at least do nothing and return the .focus() to the input field.
+
+    console.log('works')
     if (input.value.trim() !== "") {
         // create a li element
         const listItem = document.createElement("li");
