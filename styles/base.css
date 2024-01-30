@@ -13,10 +13,11 @@ header {
   background-color: #2f3e46;
 }
 
-header h1 {
+header span {
   display: flex;
   align-items: center;
   color: #cad2c5;
+  font-size: 30px;
 }
 
 header img {
