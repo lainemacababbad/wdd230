@@ -34,7 +34,7 @@ header img {
 	color: #fff;
  	position: absolute;
 	top: 16px;
-	right: 16px;
+	left: 16px;
   cursor: pointer;
 }
 
@@ -46,6 +46,18 @@ header img {
 	content: "✖︎";
     color: white;
 }
+/* End of Hamburger Menu */
+
+/* Dark Mode */
+#dark_mode {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 24px;
+    cursor: pointer;
+}
+
+/* End of Dark Mode */
 
 .navigation {
   background-color: #354f52;
@@ -73,6 +85,11 @@ header img {
 .active {
   background-color: #778da9;
   color: white;
+}
+
+main {
+  position: relative;
+  margin-top: -20px;
 }
 
 main h1 {
@@ -105,6 +122,6 @@ footer {
   padding: 20px;
   text-align: center;
   background: #2f3e46;
-  margin-top: 20px;
+  margin-top: -20px;
   color: #cad2c5;
 }
