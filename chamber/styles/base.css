@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Inter";
+  src: url("Inter-VariableFont_slnt,wght.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf") format("ttf");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #0d1b2a;
+  background-color: #cad2c5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #084b7e;
+  background-color: #ffffff;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    color: #084b7e;
+    font-size: 40px;
+  }
+
+/* Hamburger Menu */
+#hamburger_menu {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  cursor: pointer;
+}
+
+#hamburger_menu::before {
+  content: "\2630";
+}
+
+#hamburger_menu.open::before {
+  content: "✖︎";
+  color: black;
+}
+
+/* End of Hamburger Menu */
+
+.navigation {
+  background-color: #ffffff;
+  display: none;
+}
+
+.navigation.open {
+    display: block; /* when hamburger menu is clicked, it shows the nav */
+  }
+
+.navigation a {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+.events,
+.weather {
+  width: 100%;
+}
+
+.events,
+.weather,
+.spotlights {
+  color: #2468b0;
+  border: 1px solid #303030;
+}
+
+footer {
+    text-align: center;
+}
