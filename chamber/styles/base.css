@@ -11,7 +11,7 @@
 body {
   font-family: "Raleway", sans-serif;
   color: #0d1b2a;
-  background-color: #cad2c5;
+  background-color: #ffffff;
 }
 
 header {
@@ -19,15 +19,15 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  color: #084b7e;
-  background-color: #ffffff;
+  background-color: #084b7e;
 }
 
 header span {
     display: flex;
     align-items: center;
-    color: #084b7e;
-    font-size: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
   }
 
 /* Hamburger Menu */
@@ -69,7 +69,12 @@ header span {
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
+  font-size: 8px;
 }
+
+.navigation  a:hover {
+    color: #beccd6;
+  }
 
 .hero img {
   max-width: 100%;
@@ -79,7 +84,25 @@ header span {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 10px;
   }
+
+.events {
+    background: #beccd6;
+    color: #beccd6;
+}
+
+.weather {
+    background: #2468b0;
+    color: white;
+}
+
+.spotlights {
+    background: #beccd6;
+    color: #beccd6;
+}
 
 .events,
 .weather {
@@ -87,12 +110,12 @@ header span {
 }
 
 .events,
-.weather,
 .spotlights {
   color: #2468b0;
-  border: 1px solid #303030;
 }
 
 footer {
     text-align: center;
+    background: #0f1e2e;
+    color: #7f8790;
 }

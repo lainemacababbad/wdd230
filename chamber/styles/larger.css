@@ -1,18 +1,30 @@
 @media only screen and (min-width: 600px) {
-  .navigation,
+    header span {
+        font-size: 60px;
+      }
+    
+  
+    .navigation,
   .navigation.open {
     display: flex;
     justify-content: space-around;
   }
 
+  .navigation {
+    height: 100px;
+  }
+
   .navigation a {
     display: inline-block;
+    padding: 40px 16px;
+    font-size: 20px;
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    font-size: 15px;
   }
 
   /* Hide hamburger button */
