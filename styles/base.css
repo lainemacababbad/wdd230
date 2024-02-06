@@ -29,33 +29,33 @@ header img {
 /* Hamburger Menu */
 #hamburger_menu {
   font-size: 2rem;
-	border: none;
-	background: none;
-	color: #fff;
- 	position: absolute;
-	top: 16px;
-	left: 16px;
+  border: none;
+  background: none;
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  left: 16px;
   cursor: pointer;
 }
 
 #hamburger_menu::before {
-	content: "\2630";
+  content: "\2630";
 }
 
 #hamburger_menu.open::before {
-	content: "✖︎";
-    color: white;
+  content: "✖︎";
+  color: white;
 }
 
 /* End of Hamburger Menu */
 
 /* Dark Mode */
 #dark_mode {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    width: 24px;
-    cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 24px;
+  cursor: pointer;
 }
 
 .dark-mode main {
@@ -64,6 +64,15 @@ header img {
   box-shadow: #bec7bb;
 }
 
+.dark-mode a:link {
+  color: lightskyblue;
+}
+.dark-mode a:visited {
+  color: #cad2c5;
+}
+.dark-mode a:hover {
+  color: #ffffff;
+}
 
 /* End of Dark Mode */
 
@@ -85,7 +94,7 @@ header img {
   text-align: center;
 }
 
-.navigation  a:hover {
+.navigation a:hover {
   background-color: #84a98c;
   color: black;
 }
@@ -139,4 +148,3 @@ footer {
   margin-top: -10px;
   color: #cad2c5;
 }
-
