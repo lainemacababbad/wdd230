@@ -19,16 +19,8 @@ header {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #084b7e;
+  background-color: #2f3e46;
 }
-
-header span {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-  }
 
 /* Hamburger Menu */
 #hamburger_menu {
@@ -54,54 +46,90 @@ header span {
 /* End of Hamburger Menu */
 
 .navigation {
-  background-color: #ffffff;
+  background-color: #2f3e46;
   display: none;
 }
 
 .navigation.open {
-    display: block; /* when hamburger menu is clicked, it shows the nav */
-  }
+  display: block; /* when hamburger menu is clicked, it shows the nav */
+}
 
 .navigation a {
   display: flex;
   flex-direction: column;
-  color: #000000;
+  color: #cad2c5;
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
-  font-size: 8px;
+  font-size: 5px;
 }
 
-.navigation  a:hover {
-    color: #beccd6;
-  }
+.navigation a:hover {
+  background-color: #84a98c;
+  color: black;
+}
+
+/* Hero Image */
+.hero {
+  position: relative;
+}
 
 .hero img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  opacity: 0.65;
 }
 
+.hero-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #084b7e;
+  padding: 10px 20px;
+  border: 2px solid #084b7e;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #084b7e;
+  color: #ffffff;
+}
+
+.centered {
+  position: absolute;
+  top: 30%; /* Adjust this value to position the text vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 24px;
+}
+/* End of Hero Image */
+
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 10px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 10px;
+}
 
 .events {
-    background: #beccd6;
-    color: #beccd6;
+  background: #beccd6;
+  color: #beccd6;
 }
 
 .weather {
-    background: #2468b0;
-    color: white;
+  background: #2468b0;
+  color: white;
 }
 
 .spotlights {
-    background: #beccd6;
-    color: #beccd6;
+  background: #beccd6;
+  color: #beccd6;
 }
 
 .events,
@@ -115,7 +143,7 @@ header span {
 }
 
 footer {
-    text-align: center;
-    background: #0f1e2e;
-    color: #7f8790;
+  text-align: center;
+  background: #0f1e2e;
+  color: #7f8790;
 }
