@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images: srcset</title>
+</head>
+<body>
+  <main>
+    <div class="hero">
+        <picture>
+          <source srcset="/week03/images 2/hero-small.webp" media="(max-width: 500px)">
+          <source srcset="/week03/images 2/hero-medium.webp" media="(max-width: 1000px)">
+          <img src="/week03/images 2/hero-large.webp" alt="cebu temple" width="1500" height="750">
+        </picture>
+      </div>
+  </main>  
+</body>
+</html>
