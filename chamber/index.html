@@ -23,39 +23,40 @@
 
     <link rel="icon" href="favicon.ico" />
 
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+    <!-- Add this line for custom CSS -->
   </head>
 
   <body>
     <header>
       <nav class="navigation">
-        <a href="/">HOME</a>
-        <a href="#">DISCOVER</a>
-        <a href="#">DIRECTORY</a>
-        <a href="#">JOIN</a>
+        <strong>
+          <a href="/">HOME</a>
+          <a href="#">DISCOVER</a>
+          <a href="#">DIRECTORY</a>
+          <a href="#">JOIN</a>
+        </strong>
       </nav>
     </header>
     <button id="hamburger_menu"></button>
-    <!-- Navigation bar -->
-    <main>
-      <section class="hero">
-        <img src="images/whiterock.jpeg" alt="Hero Image" />
-        <div class="centered">WELCOME TO WHITEROCK CHAMBER OF COMMERCE</div>
-        <button class="hero-button">Join Us</button>
-      </section>
-      <div class="container">
-        <section class="events">
-          <h2>Events</h2>
-        </section>
-        <section class="weather">
-          <h2>Weather</h2>
-        </section>
-        <section class="spotlights">
-          <h2>Spotlights</h2>
-        </section>
+      <div id="hero">
+        <img
+          id="hero-image"
+          src="/chamber/images/whiterock.jpeg"
+          alt="Picture of Whiterock Pier Overlooking The Houses"
+        />
+        <div id="hero-text">
+          <h1>Welcome to White Rock Chamber of Commerce</h1>
+          <button id="cta">JOIN US</button>
+        </div>
       </div>
+    <main>
+      <h2>Events</h2>
+      <h2>Weather</h2>
+      <h2>Highlights</h2>
     </main>
     <footer>
       <p id="year"></p>

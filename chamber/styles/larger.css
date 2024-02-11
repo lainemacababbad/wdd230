@@ -1,5 +1,4 @@
 @media only screen and (min-width: 600px) {
-
   .navigation,
   .navigation.open {
     display: flex;
@@ -16,29 +15,16 @@
     font-size: 15px;
   }
 
-  /* Hero Image */
+  /* Start of Hero */
 
-  .hero img {
-    max-width: 100%;
-    height: 5%;
-  }
+#hero-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .centered {
-    position: absolute;
-    top: 40%; /* Adjust this value to position the text vertically */
-    left: 53%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-  }
-
-  /* End of Hero Image */
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    font-size: 15px;
-  }
+/* End of Hero */
 
   /* Hide hamburger button */
   #hamburger_menu {
