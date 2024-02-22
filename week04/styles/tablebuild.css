@@ -5,7 +5,7 @@ table {
 table,  tr, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 10px;
 }
 
 caption {
@@ -28,4 +28,8 @@ td {
 #header {
     background-color: #333333;
     color: white;
+}
+
+#blank {
+    background-color: black;
 }
