@@ -1,0 +1,201 @@
+body {
+  font-family: "Open Sans";
+  color: #0d1b2a;
+  background-color: #cad2c5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background-color: #2f3e46;
+}
+
+header span {
+  display: flex;
+  align-items: center;
+  color: #cad2c5;
+  font-size: 30px;
+}
+
+header img {
+  margin-right: 10px;
+  max-width: 100px;
+  box-shadow: 5px 5px 2.5px #000;
+}
+
+/* ---------- Hamburger Menu ---------- */
+#hamburger_menu {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  color: #fff;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+}
+
+#hamburger_menu::before {
+  content: "\2630";
+}
+
+#hamburger_menu.open::before {
+  content: "✖︎";
+  color: white;
+}
+/* ---------- End of Hamburger Menu ---------- */
+
+/*----------  Dark Mode ---------- */
+#dark_mode {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 24px;
+  cursor: pointer;
+}
+
+.dark-mode main {
+  background-color: #2b2b2b;
+  color: #bec7bb;
+  box-shadow: #bec7bb;
+}
+
+.dark-mode a:link {
+  color: lightskyblue;
+}
+.dark-mode a:visited {
+  color: #cad2c5;
+}
+.dark-mode a:hover {
+  color: #ffffff;
+}
+/* ---------- End of Dark Mode ---------- */
+
+.navigation {
+  background-color: #354f52;
+  display: none;
+}
+
+.navigation.open {
+  display: block; /* when hamburger menu is clicked, it shows the nav */
+}
+
+.navigation a {
+  display: flex;
+  flex-direction: column;
+  color: #cad2c5;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #84a98c;
+  color: black;
+}
+
+.active {
+  background-color: #2f3e46;
+  color: white;
+}
+
+main h1 {
+  border-bottom: 3px solid #2f3e46;
+  border-top: 3px solid #2f3e46;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ---------- FORM ---------- */
+/* .wf1 {
+    width: 100%;
+} */
+.wf1 fieldset {
+  margin: 2rem 0;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 0.5rem 2%;
+}
+
+.wf1 legend {
+  background-color: #354f52;
+  color: #cad2c5;
+  padding: 0 0.5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: #0d1b2a;
+  font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="password"],
+.wf1 input[type="email"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+.wf1 input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#354f52, #2f3e46);
+  color: white;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+  border-right: solid 6px #2f3e46;
+}
+
+.wf1 input:required:valid {
+  border-right: solid 6px #354f52;
+}
+/* ---------- END OF FORM ---------- */
+
+/* ---------- FOOTER ---------- */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #2f3e46;
+  margin-top: -10px;
+  color: #cad2c5;
+}
+
+/* ---------- LARGER SCREEN ---------- */
+@media only screen and (min-width: 600px) {
+  .navigation,
+  .navigation.open {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navigation a {
+    display: inline-block;
+  }
+
+  /* Hide hamburger button */
+  #hamburger_menu {
+    display: none;
+  }
+  .wf1 {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
