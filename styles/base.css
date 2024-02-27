@@ -163,12 +163,20 @@ main h1 {
 .label {
   text-align: center;
 }
-
 /* End of Visit Count */
 
 main h2 {
   background-color: #354f52;
   color: #cad2c5;
+  text-align: center;
+}
+
+/* ---------- FOR RECORD.HTML ----------*/
+#recordfooter {
+  margin-top: 10em;
+}
+
+#message {
   text-align: center;
 }
 

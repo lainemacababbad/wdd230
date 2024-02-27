@@ -34,5 +34,12 @@
     width: 100%;
   }
 
+  /* for the form */
+
+  .wf1 {
+    margin: 0 auto;
+    width: 50%;
+  }
+
 }
 
