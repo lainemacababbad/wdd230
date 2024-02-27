@@ -1,23 +1,21 @@
 // password
 const p1 = document.querySelector("#password");
 const p2 = document.querySelector("#password2");
-const message = document.querySelector("#formmessage");
+const message = document.querySelector("#passwordmessage");
 
-p2.addEventListener("focusout", checkSame);
+p2.addEventListener("focusout", controlar);
 
-function checkSame() {
+function controlar() {
 	if (p1.value !== p2.value) {
-		message.textContent = "❗Password DO NOT MATCH!";
-		message.style.visibility = "show";
-		p2.style.backgroundColor = "#fff0f3";
-		p2.value = "";
-		p2.focus();
+		p1.value =""
+        p2.value=""
+        p1.focus()
+        message.textContent = "Password Do Not Match. Please try again."
 	} else {
-		message.style.display = "none";
-		p2.style.backgroundColor = "#fff";
-		p2.style.color = "#000";
+		message.textContent=""
 	}
 }
+
 // range
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("rating");
@@ -48,7 +46,7 @@ hamburgerMenu.addEventListener('click', () => {
 	hamburgerMenu.classList.toggle('open');
 });
 
-// dark more
+// dark mode
 document.addEventListener("DOMContentLoaded", function() {
 	const darkModeButton = document.getElementById("dark_mode");
 	const body = document.body;
