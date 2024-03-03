@@ -42,11 +42,11 @@ header {
   content: "✖︎";
   color: #303030;
 }
-
 /* End of Hamburger Menu */
 
 .navigation {
   display: none;
+  
 }
 
 .navigation.open {
@@ -60,7 +60,7 @@ header {
   padding: 8px 16px;
   text-decoration: none;
   text-align: center;
-  font-size: 5px;
+  font-size: 10px;
 }
 
 .navigation a:hover {
@@ -68,15 +68,15 @@ header {
 }
 
 /* Start of Hero */
-
 #hero {
   position: relative;
+  top: 15px;
 }
 
 #hero-image {
   height: 400px;
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.65;
 }
 
 #hero-text {
@@ -105,20 +105,43 @@ header {
 #cta:hover {
   background-color: #0c6aa8;
 }
-
 /* End of Hero */
 
-
-.container {
+.container1 {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 10px;
 }
 
-main h2 {
-  text-align: center;
+#events, #weather, #highlights
+{
+  color: #0c6aa8;
+}
+
+#events, #weather, #highlights {
+  background-color: lightblue;
+  box-shadow: 10px 10px 5px #2f3e46;
+  padding: 50px;
+  margin: 20px;
+}
+
+#text-events {
+  color: #303030
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 10px 10px 5px #2f3e46;
+  background-color: lightblue;
+  padding: 50px;
+  margin: 20px;
+}
+
+#company1, #company2, #company3 {
+  padding: 10px;
+  margin: 10px;
+  background-color: #084b7e;
+  color: white;
 }
 
 footer {
@@ -126,3 +149,58 @@ footer {
   background: #fff;
   color: #7f8790;
 }
+
+/* for the discover.html */
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile view */
+  gap: 10px;
+}
+
+.sidebar-item {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.main {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* for the join.html */
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: #0d1b2a;
+  font-size: 0.9rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wf1 input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#354f52, #2f3e46);
+  color: white;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: 1rem;
+  box-shadow: 1px 1px 4px #999;
+}
+
+/* Membership benefits column */

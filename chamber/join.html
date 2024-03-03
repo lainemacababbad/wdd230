@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lalaine Macababbad - WDD 230 - Web Frontend Development</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="WDD 230 - Web Frontend Development | Lalaine Macababbad | The Chamber of Commerce Home Page"/>
+    <meta name="author" content="Lalaine Macababbad"/>
+    <meta property="og:title" content="Lalaine Macababbad - WDD 230 - Chamber of Commerce"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image"
+          content="https://i0.wp.com/vancouversbestplaces.com/wp-content/uploads/2013/12/White-Rock-at-White-Rock.jpg?w=640&ssl=1"/>
+    <meta property="og:url" content="https://lainemacababbad.github.io"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/larger.css"/>
+    <link rel="stylesheet" href="styles/custom.css"/>
+</head>
+
+<body>
+<header>
+    <nav class="navigation">
+        <strong>
+            <a href="/">HOME</a>
+            <a href="/chamber/discover.html">DISCOVER</a>
+            <a href="#">DIRECTORY</a>
+            <a href="#">JOIN</a>
+        </strong>
+    </nav>
+</header>
+<button id="hamburger_menu"></button>
+<div id="hero">
+    <img
+            id="hero-image"
+            src="/chamber/images/whiterock.jpeg"
+            alt="Picture of Whiterock Pier Overlooking The Houses"
+    />
+    <div id="hero-text">
+        <h1>Welcome to White Rock Chamber of Commerce</h1>
+        <button id="cta">JOIN US</button>
+    </div>
+</div>
+<main>
+    <!-- start of membership-benefits -->
+    <div class="membership-benefits">
+        <h1>Membership Information</h1>
+        <div class="membership-benefit">
+            <h3>NP Membership</h3>
+            <ul>
+                <li>Access to special events</li>
+                <li>Basic training sessions</li>
+                <li>Listing in directory</li>
+            </ul>
+            <p>Cost: $100/year</p>
+        </div>
+        <div class="membership-benefit">
+            <h3>Bronze Membership</h3>
+            <ul>
+                <li>All benefits of NP Membership</li>
+                <li>Priority access to special events</li>
+                <li>Enhanced training sessions</li>
+                <li>Featured listing in directory</li>
+            </ul>
+            <p>Cost: $200/year</p>
+        </div>
+        <div class="membership-benefit">
+            <h3>Silver Membership</h3>
+            <ul>
+                <li>All benefits of Bronze Membership</li>
+                <li>Discounts on advertising</li>
+                <li>Access to exclusive events</li>
+            </ul>
+            <p>Cost: $300/year</p>
+        </div>
+        <div class="membership-benefit">
+            <h3>Gold Membership</h3>
+            <ul>
+                <li>All benefits of Silver Membership</li>
+                <li>Priority advertising slots</li>
+                <li>Personalized event planning</li>
+            </ul>
+            <p>Cost: $500/year</p>
+        </div>
+    </div>
+    <!-- end of membership-benefits -->
+
+    <!-- start of form -->
+    <form method="get" action="thankyou.html" class="wf1">
+        <div><p>JOIN THE CHAMBER TODAY!</p></div>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:
+                <input type="text" required name="fname" id="fname"/></label>
+            <label for="lname">Last Name:
+                <input type="text" required name="lname" id="lname"/></label>
+            <label for="position">Title/Position:
+                <input type="text" name="position" id="position" pattern="^[a-zA-Z -]{7,}$"/></label>
+            <label for="email">Email Address:
+                <input type="email" name="email" id="email" placeholder="Please enter a valid email address"
+                       pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/></label>
+            <label for="phonenumber">Phone Number:
+                <input type="tel" required name="phonenumber" id="phonenumber"/></label>
+            <label for="business">Business/Organization Name
+                <input type="text" required name="organization" id="organization"/></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership</legend>
+            <label for="membership">Membership Level
+                <select name="membership" id="membership">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Fields</legend>
+            <label for="business_description">Business/Organization Description
+                <textarea name="business_description" id="business_description"></textarea>
+            </label>
+            <label for="timestamp">Timestamp
+                <input type="hidden" name="timestamp" id="timestamp" value="<!-- JavaScript code to populate timestamp -->"/>
+            </label>
+            <div><input type="submit" value="Join The Chamber" /></div>
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <p id="year"></p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/chamber.js"></script>
+</body>
+</html>

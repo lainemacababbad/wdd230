@@ -16,3 +16,5 @@ hamburgerMenu.addEventListener("click", () => {
   navigation.classList.toggle("open");
   hamburgerMenu.classList.toggle("open");
 });
+
+// weather

@@ -52,44 +52,36 @@
       </div>
     </div>
     <main>
-      <div class="container1">
-        <div id="events">
-          <h2>Events</h2>
-          <p id="text-events">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sequi
-            quos fuga odio voluptatum mollitia rerum inventore unde eius nulla
-            eveniet, natus quaerat numquam nihil? Inventore officia cumque vitae
-            eligendi.
-          </p>
-        </div>
-        <div id="weather">
-          <h2>Weather</h2>
-        </div>
-      </div>
-      <div class="container2">
-        <div id="company1">
-          <h2>Company 1</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            dolores minus dignissimos sed, facilis cumque perspiciatis,
-            consequatur iure harum officia at asperiores autem distinctio
-            excepturi incidunt optio. Neque, dolorum velit?
-          </p>
-        </div>
-        <div id="company2">
-          <h2>Company 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            molestiae sapiente, temporibus, quia nisi perspiciatis odio deserunt
-            ipsum est nemo delectus id. Minus praesentium, inventore dignissimos
-            recusandae eius dolore sint.
-          </p>
-        </div>
-        <div id="company3">
-          <h2>Company 3</h2>
-          <p>Lorem</p>
-        </div>
-      </div>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join the Chamber Today!</legend>
+                <label for="fname">First Name:
+                    <input type="text" required name="fname" id="fname" /></label>
+                <label for="lname">Last Name:
+                    <input type="text" required name="lname" id="lname" /></label>
+                <label for="position">Title/Position:
+                    <input type="text" name="fname" id="fname" pattern="^[a-zA-Z -]{7,}$" /></label>
+                <label for="email">Email Address:
+                    <input type="email" name="email" id="email" placeholder="Please enter a valid email address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" /></label>
+                <label for="phonenumber">Phone Number:
+                    <input type="tel" required name="phonenumber" id="phonenumber" /></label>  
+                <label for="business">Business/Organization Name
+                    <input type="text" required name="organization" id="organization" /></label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership</legend>
+                <label for="membership">Membership Level
+                    <select name="level" id="level">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
     </main>
     <footer>
       <p id="year"></p>

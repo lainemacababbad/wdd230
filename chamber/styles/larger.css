@@ -17,17 +17,54 @@
 
   /* Start of Hero */
 
-#hero-text {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  #hero-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
 
-/* End of Hero */
+  #hero-text h1 {
+    font-size: 50px;
+  }
+
+  /* End of Hero */
 
   /* Hide hamburger button */
   #hamburger_menu {
     display: none;
   }
 }
+
+.container1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.container2 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* for the discover.html */
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* Sidebar takes 200px width, main content takes the remaining space */
+  gap: 20px;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile view */
+  gap: 10px;
+}
+
+.sidebar-item {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.main {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* for the join.html */
