@@ -1,0 +1,12 @@
+{
+    "familyName" : "Macababbad",
+    "dateMoved" : "April 2013",
+    "numberOfMembers" : 4,
+    "bishopricVisit" : true,
+    "members" : [
+        {"name": "Gil Macababbad"},
+        {"name": "Emelisa Macababbad"},
+        {"name": "Lalaine Macababbad"},
+        {"name": "Jan Lloyd Macababbad"}
+    ]
+}
