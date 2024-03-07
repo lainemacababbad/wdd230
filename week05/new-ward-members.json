@@ -4,9 +4,26 @@
     "numberOfMembers" : 4,
     "bishopricVisit" : true,
     "members" : [
-        {"name": "Gil Macababbad"},
-        {"name": "Emelisa Macababbad"},
-        {"name": "Lalaine Macababbad"},
-        {"name": "Jan Lloyd Macababbad"}
-    ]
+        {
+            "name" : "Gil Macababbad",
+            "gender" : "Male",
+            "birthdate" : "December 21, 1970"
+        },
+        {
+            "name" : "Emelisa Macababbad",
+            "gender" : "Female",
+            "birthdate" : "November 23, 1974"
+        },
+        {
+            "name" : "Lalaine Macababbad",
+            "gender" : "Female",
+            "birthdate" : "April 14, 1999"
+        },
+        {
+            "name" : "Jan Lloyd Macababbad",
+            "gender" : "Male",
+            "birthdate" : "January 30, 1999"
+        }
+
+        ]
 }
