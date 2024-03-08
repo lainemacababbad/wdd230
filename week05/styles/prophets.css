@@ -1,0 +1,43 @@
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+    border: 2px solid black; /* Add border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+img {
+  width: auto;
+  max-width: 325px;
+  height: 200px;
+  border: 1px solid #012622;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #b9b9cb;
+  border: 2px solid #012622;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: navy;
+}
+
+h2 {
+  color: navy;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid #bbb;
+}
+
+p {
+    color: white;
+}

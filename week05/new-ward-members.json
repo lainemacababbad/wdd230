@@ -1,29 +1,31 @@
-{
+[
+    {
     "familyName" : "Macababbad",
-    "dateMoved" : "April 2013",
-    "numberOfMembers" : 4,
-    "bishopricVisit" : true,
-    "members" : [
+    "dateMovedIn" : "April 2013",
+    "numberOfPeople" : 4,
+    "visitedByBishopric" : true,
+    "familyMembers" : [
         {
-            "name" : "Gil Macababbad",
+            "name" : "Gil",
             "gender" : "Male",
             "birthdate" : "December 21, 1970"
         },
         {
-            "name" : "Emelisa Macababbad",
+            "name" : "Emelisa",
             "gender" : "Female",
             "birthdate" : "November 23, 1974"
         },
         {
-            "name" : "Lalaine Macababbad",
+            "name" : "Lalaine",
             "gender" : "Female",
-            "birthdate" : "April 14, 1999"
+            "birthdate" : "April 14, 1997"
         },
         {
-            "name" : "Jan Lloyd Macababbad",
+            "name" : "Jan Lloyd",
             "gender" : "Male",
             "birthdate" : "January 30, 1999"
         }
 
         ]
-}
+    }
+]
