@@ -90,6 +90,8 @@ header {
   color: #fff;
   font-size: 2em;
   margin-bottom: 20px;
+  width: 80%;
+  text-shadow: 2px 2px 5px black;
 }
 
 #cta {
