@@ -34,7 +34,6 @@
   #hamburger_menu {
     display: none;
   }
-}
 
 .container1 {
   grid-template-columns: 2fr 1fr;
@@ -45,26 +44,16 @@
 }
 
 /* for the discover.html */
-.container {
+.discover-container {
   display: grid;
-  grid-template-columns: 200px 1fr; /* Sidebar takes 200px width, main content takes the remaining space */
-  gap: 20px;
+  grid-template-columns: 30% 70%;
 }
 
-.sidebar {
+.main-area {
   display: grid;
-  grid-template-columns: 1fr; /* Single column for mobile view */
-  gap: 10px;
-}
-
-.sidebar-item {
-  background-color: lightgray;
-  padding: 10px;
-}
-
-.main {
-  background-color: lightblue;
-  padding: 20px;
+  grid-template-columns: 50% 50%;
 }
 
 /* for the join.html */
+
+}
