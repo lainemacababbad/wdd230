@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lalaine Macababbad - WDD 230 - Web Frontend Development</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development | Lalaine Macababbad | The Chamber of Commerce Home Page"
+    />
+    <meta name="author" content="Lalaine Macababbad" />
+    <meta
+      property="og:title"
+      content="Lalaine Macababbad - WDD 230 - Chamber of Commerce"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i0.wp.com/vancouversbestplaces.com/wp-content/uploads/2013/12/White-Rock-at-White-Rock.jpg?w=640&ssl=1"
+    />
+    <meta property="og:url" content="https://lainemacababbad.github.io" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation">
+        <strong>
+          <a href="/wdd230/chamber/index.html">HOME</a>
+          <a href="/wdd230/chamber/discover.html">DISCOVER</a>
+          <a href="#">DIRECTORY</a>
+          <a href="/wdd230/chamber/join.html">JOIN</a>
+        </strong>
+      </nav>
+    </header>
+    <button id="hamburger_menu"></button>
+    <div id="hero">
+      <img
+        id="hero-image"
+        src="/chamber/images/whiterock.jpeg"
+        alt="Picture of Whiterock Pier Overlooking The Houses"
+      />
+      <div id="hero-text">
+        <h1>Welcome to Vancouver Chamber of Commerce</h1>
+        <button id="cta">JOIN US</button>
+      </div>
+    </div>
+    <main class="business">
+      <h2>Business Directory</h2>
+        <div id="company-info"></div>
+    </main>
+    <footer>
+      <p id="year"></p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+  </body>
+</html>

@@ -159,7 +159,7 @@ footer {
   color: #7f8790;
 }
 
-/* for the discover.html */
+/* ----------- start of discover.html ---------- */
 #hero {
   margin-bottom: 10px;
 }
@@ -196,8 +196,9 @@ footer {
 .places h4 {
   margin-top: 5px;
 }
+/* ----------- end of discover.html ---------- */
 
-/* for the join.html */
+/* ----------- start of join.html ---------- */
 .wf1 label {
   display: block;
   padding-top: 1rem;
@@ -223,3 +224,66 @@ main {
 }
 
 /* Membership benefits column */
+/* ------------ end of join.html ---------- */
+
+/* ----------- start of directory.html ---------- */
+.business {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.business h2 {
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+}
+
+.company {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  
+}
+
+.company h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.company p {
+  margin-bottom: 5px;
+}
+
+.company a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.company img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.company p.membership-level {
+  font-weight: bold;
+}
+
+.company p.other-info {
+  margin-top: 10px;
+}
+
+.menu {
+  margin-bottom: 10px;
+}
+
+/* grid and list */
+
+/* ----------- end of directory.html ---------- */
