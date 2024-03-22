@@ -1,7 +1,7 @@
 {
     "companies": [
       {
-        "image": "/wdd230/chamber/images/visionselectronic.png",
+        "image": "/chamber/images/visionselectronic.png",
         "name": "Visions Electronic",
         "address": "1672 SE Marine Dr, Vancouver, BC",
         "phone": "604-718-6434",
@@ -10,7 +10,7 @@
         "other_information": "Specializes in consumer electronics."
       },
       {
-        "image": "/wdd230/chamber/images/guildyule.png",
+        "image": "/chamber/images/guildyule.png",
         "name": "Guild Yule LLP, Barristers and Solicitors",
         "address": "1075 W Georgia St #2100, Vancouver, BC",
         "phone": "604-688-1221",
@@ -19,7 +19,7 @@
         "other_information": "Full-service law firm offering legal assistance."
       },
       {
-        "image": "/wdd230/chamber/images/befresh.png",
+        "image": "/chamber/images/befresh.png",
         "name": "Be Fresh Local Market",
         "address": "1900 W 1st Ave, Vancouver, BC",
         "phone": "604-568-7783",
@@ -28,7 +28,7 @@
         "other_information": "Organic grocery store with locally sourced products."
       },
       {
-        "image": "/wdd230/chamber/images/anytimefitness.png",
+        "image": "/chamber/images/anytimefitness.png",
         "name": "Anytime Fitness",
         "address": "1433 Cedar Cottage Mews, Vancouver, BC",
         "phone": "604-558-1551",
@@ -37,7 +37,7 @@
         "other_information": "State-of-the-art gym with personal training services."
       },
       {
-        "image": "/wdd230/chamber/images/basilgreen.png",
+        "image": "/chamber/images/basilgreen.png",
         "name": "Basil Green Landscaping",
         "address": "5555 Dunbar St,, Vancouver, BC",
         "phone": "604-362-0065",
@@ -46,7 +46,7 @@
         "other_information": "Professional landscaping and garden design services."
       },
       {
-        "image": "/wdd230/chamber/images/tech.webp",
+        "image": "/chamber/images/tech.webp",
         "name": "Tech In A Tux",
         "address": "188 Milross Ave, Vancouver, BC",
         "phone": "604-505-4487",
@@ -55,7 +55,7 @@
         "other_information": "IT consulting and software development company."
       },
       {
-        "image": "/wdd230/chamber/images/jadedynasty.png",
+        "image": "/chamber/images/jadedynasty.png",
         "name": "Jade Dynasty Restaurant",
         "address": "137 E Pender St, Vancouver, BC",
         "phone": "604-683-8816",

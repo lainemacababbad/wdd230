@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Generate HTML for each company card
       const companyCardsHTML = companies.map(company => `
         <div class="company">
-          <img src="/wdd230/chamber/images/${company.image}" alt="${company.name}">
+          <img src="/chamber/images/${company.image}" alt="${company.name}">
           <h3>${company.name}</h3>
           <p>Address: ${company.address}</p>
           <p>Phone: ${company.phone}</p>
