@@ -64,7 +64,7 @@ header {
 }
 
 .navigation a:hover {
-  color: #beccd6;
+  color: #fffcf2;
 }
 
 /* Start of Hero */
@@ -95,8 +95,8 @@ header {
 }
 
 #cta {
-  background-color: #084b7e;
-  color: #fff;
+  background-color: #2f3e46;
+  color: #fffcf2;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -105,7 +105,8 @@ header {
 }
 
 #cta:hover {
-  background-color: #0c6aa8;
+  background-color: #fffcf2;
+  color: #2f3e46;
 }
 
 /* End of Hero */
