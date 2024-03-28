@@ -116,14 +116,12 @@ header {
 }
 
 #events,
-#weather,
-#highlights {
+#weather {
   color: #fffcf2;
 }
 
 #events,
-#weather,
-#highlights {
+#weather {
   background-color: #403d39;;
   box-shadow: 10px 10px 5px #2f3e46;
   padding: 50px;
