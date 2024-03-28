@@ -171,7 +171,7 @@ footer {
   background-color: #ccc5b9;
 }
 
-#demographics, #attractions {
+#demographics, .places {
   padding: 10px;
 }
 
@@ -179,10 +179,6 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.places {
-  padding: 10px;
 }
 
 .places img {
