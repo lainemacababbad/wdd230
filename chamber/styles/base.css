@@ -158,10 +158,6 @@ footer {
 }
 
 /* ----------- start of discover.html ---------- */
-#hero {
-  margin-bottom: 10px;
-}
-
 .discover-container {
   display: grid;
   grid-template-columns: 1fr;
