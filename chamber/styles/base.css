@@ -168,7 +168,7 @@ footer {
 }
 
 .sidebar {
-  background-color: #ccc5b9;
+  border: 1px solid #ccc5b9;
 }
 
 #demographics, .places, #attractions {
