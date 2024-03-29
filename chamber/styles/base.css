@@ -158,6 +158,10 @@ footer {
 }
 
 /* ----------- start of discover.html ---------- */
+#hero {
+  margin-bottom: 10px;
+}
+
 .discover-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -167,7 +171,7 @@ footer {
   border: 1px solid #ccc5b9;
 }
 
-#demographics, .places, #attractions {
+#demographics, .places {
   padding: 10px;
 }
 
