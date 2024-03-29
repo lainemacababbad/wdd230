@@ -169,6 +169,7 @@ footer {
 
 .sidebar {
   border: 1px solid #ccc5b9;
+  border-top: 10px;
 }
 
 #demographics, .places {
