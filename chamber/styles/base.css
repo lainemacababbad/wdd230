@@ -153,25 +153,115 @@ header {
 
 /* End of Banner*/
 
-.container {
+.container1 {
   display: grid;
-  grid-template-rows: auto auto; /* Define two rows */
-  gap: 20px; /* Add some gap between the rows */
+  grid-template-columns: 1fr; /* Change grid-template-columns to display one column */
 }
 
-.container1 {
-  grid-row: 1; /* Place container1 in the first row */
-  display: grid;
-  grid-template-columns: 1fr;
+/* Weather */
+#weather {
+  color: #333333;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
+
+#weather h2 {
+  margin-bottom: 10px;
+}
+
+#weather p {
+  margin-bottom: 8px;
+}
+
+#weatherDesc {
+  font-weight: bold;
+}
+
+#weatherIcon {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.forecast-item img {
+  width: 40px; 
+}
+
+.forecast-item p {
+  margin-top: 5px; 
+  font-size: 0.9em; 
+}
+/* End of Weather */
+
+/* Events */
+#events {
+  background-color: #cfe8e1;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 20px;
+}
+
+#events h2, #weather h2 {
+  color: #2f3e46;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#text-events {
+  color: #2f3e46;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Event Idea Cards */
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.event-card h3 {
+  color: #2f3e46;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+/* End of Events */
 
 .container2 {
-  grid-row: 2; /* Place container2 in the second row */
   display: grid;
   grid-template-columns: 1fr;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #2f3e46;
   padding: 50px;
+  margin: 20px;
   border-radius: 10px; 
 }
 
@@ -183,7 +273,6 @@ header {
   background-color: #fffcf2;
   color: #403d39;
 }
-
 
 
 footer {
