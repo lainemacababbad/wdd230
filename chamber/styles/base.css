@@ -96,8 +96,8 @@ header {
 }
 
 #cta {
-  background-color: #2f3e46;
-  color: #fffcf2;
+  background-color: #f0f0f0;
+  color: #333333;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -106,12 +106,12 @@ header {
 }
 
 #cta:hover {
-  background-color: #fffcf2;
-  color: #2f3e46;
+  background-color: #cfe8e1;
+  color: #fffcf2;
 }
 
-#cta:active {
-  background-color: #6c757d;
+#cta:visited {
+  background-color: #2f3e46;
   color: #fffcf2;
 }
 
