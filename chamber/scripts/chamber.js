@@ -17,8 +17,6 @@ hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("open");
 });
 
-// weather
-
 // json file
 document.addEventListener("DOMContentLoaded", function() {
   const companyInfoContainer = document.getElementById("company-info");
