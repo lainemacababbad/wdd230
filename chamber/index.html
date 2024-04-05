@@ -22,6 +22,7 @@
     <meta property="og:url" content="https://lainemacababbad.github.io" />
 
     <link rel="icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/base.css" />
@@ -43,8 +44,9 @@
     <div id="hero">
       <img
         id="hero-image"
-        src="/chamber/images/vancouver.webp"
+        src="/wdd230/chamber/images/vancouver.webp"
         alt="Picture of Whiterock Pier Overlooking The Houses"
+        loading="lazy"
       />
       <div id="hero-text">
         <h1>Welcome to Vancouver Chamber of Commerce</h1>
@@ -52,6 +54,17 @@
       </div>
     </div>
     <main>
+      <div class="banner">
+        <div class="banner__content">
+          <div class="banner__text">
+            <strong>Announcement:</strong> Join us for the Chamber of Commerce
+            Meet and Greet on Wednesday at 7:00 p.m.
+          </div>
+          <button class="banner__close" type="button">
+            <span class="material-icons"> close </span>
+          </button>
+        </div>
+      </div>
       <div class="container1">
         <div id="events">
           <h2>Events</h2>
@@ -65,12 +78,13 @@
         <div id="weather">
           <h2>Weather</h2>
           <p>
-            The current temperature in Vancouver BC: <span id="currentTemp"></span>
+            The current temperature in Vancouver BC:
+            <span id="currentTemp"></span>
           </p>
-          <p>
-            Current condition: <span id="weatherDesc"></span>
-          </p>
-          <img id="weatherIcon" src="" alt="Weather Icon">
+          <p>Current condition: <span id="weatherDesc"></span></p>
+          <img id="weatherIcon" src="" alt="Weather Icon" />
+          <div id="forecast" class="forecast"></div>
+          <!-- This is where the forecast will be displayed -->
         </div>
       </div>
       <div class="container2">
