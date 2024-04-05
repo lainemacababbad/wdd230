@@ -153,9 +153,11 @@ header {
 
 /* End of Banner*/
 
-.container1 {
+.container1,
+.container2,
+.discover-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Set grid to one column */
 }
 
 /* Weather */
@@ -256,8 +258,6 @@ header {
 /* End of Events */
 
 .container2 {
-  display: grid;
-  grid-template-columns: 1fr;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #2f3e46;
   padding: 50px;
@@ -285,11 +285,6 @@ footer {
 /* ----------- start of discover.html ---------- */
 #hero {
   margin-bottom: 20px;
-}
-
-.discover-container {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 .sidebar {
