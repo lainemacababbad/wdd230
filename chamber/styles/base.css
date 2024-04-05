@@ -110,6 +110,11 @@ header {
   color: #2f3e46;
 }
 
+#cta:active {
+  background-color: #6c757d;
+  color: #fffcf2;
+}
+
 /* End of Hero */
 
 /* Banner */
