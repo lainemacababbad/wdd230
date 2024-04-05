@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   background-color: #ccc5b9;
 }
 
@@ -75,7 +75,7 @@ header {
 }
 
 #hero-image {
-  height: 400px;
+  height: auto;
   width: 100%;
   opacity: 0.85;
 }
@@ -91,7 +91,7 @@ header {
   color: #fff;
   font-size: 2em;
   margin-bottom: 20px;
-  width: 80%;
+  width: 70%;
   text-shadow: 2px 2px 5px black;
 }
 

@@ -19,13 +19,14 @@
 
   #hero-text {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
 
   #hero-text h1 {
-    font-size: 50px;
+    font-size: 70px;
+    width: 100%;
   }
 
   /* End of Hero */
