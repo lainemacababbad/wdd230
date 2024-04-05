@@ -1,7 +1,7 @@
 const currentTemp = document.getElementById('currentTemp');
 const weatherDesc = document.getElementById('weatherDesc');
 const weatherIcon = document.getElementById('weatherIcon');
-const forecastContainer = document.getElementById('forecast'); // Added forecastContainer
+const forecastContainer = document.getElementById('forecast');
 
 const latitude = 49.19162500600741;
 const longitude = -122.85031370287614;
@@ -30,7 +30,6 @@ function updateWeatherInfo(data) {
   weatherIcon.src = iconUrl;
 }
 
-// 3 day forecast
 async function getForecastData() {
   try {
     const response = await fetch(forecastApiUrl);
@@ -45,11 +44,15 @@ async function getForecastData() {
 }
 
 function updateForecastInfo(data) {
-  forecastContainer.innerHTML = '<h3>3-Day Forecast:</h3>'; // Change the header to indicate 3-day forecast
+  forecastContainer.innerHTML = '<h3>3-Day Forecast:</h3>';
 
-  for (let i = 0; i < 3; i++) { // Loop through only 3 days
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const currentDay = new Date().getDay();
+  
+  for (let i = 0; i < 3; i++) {
     const forecastData = data.list[i];
-    const date = new Date(forecastData.dt * 1000);
+    const dayIndex = (currentDay + i) % 7; // Adjust the index to start from the current day
+    const dayName = days[dayIndex];
     const temp = forecastData.main.temp;
     const desc = forecastData.weather[0].description;
     const icon = forecastData.weather[0].icon;
@@ -57,7 +60,7 @@ function updateForecastInfo(data) {
 
     const forecastHTML = `
       <div class="day-forecast">
-        <h4>${date.toDateString()}</h4>
+        <h4>${dayName}</h4>
         <p>Temp: ${temp.toFixed(1)}°C</p>
         <p>Description: ${desc}</p>
         <img src="${iconUrl}" alt="Weather Icon">
