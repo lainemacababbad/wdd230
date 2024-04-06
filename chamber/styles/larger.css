@@ -36,23 +36,28 @@
     display: none;
   }
 
-  .container1,
-  .container2 {
+  main {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .container3 {
+    grid-column: 1 / -1; /* Expand to cover all columns */
+    margin-top: 20px; /* Adjust margin as needed */
+    place-self: center; /* Center the container vertically and horizontally */
+  }
+  
+  /* for the discover.html */
+  .discover-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
   }
 
-/* for the discover.html */
-.discover-container {
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
+  .main-area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 
-.main-area {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-/* for the join.html */
-
+  /* for the join.html */
 }
