@@ -1,22 +1,22 @@
 const url = "data/members.json"; // Adjust the URL to point to your JSON file
-const companiesContainer = document.getElementById('companies');
+const membersContainer = document.getElementById('members');
 
-async function getCompanyData(url) {
+async function getMemberData(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    displayCompanies(data.companies);
+    displayMembers(data.members);
   } catch (error) {
-    console.error('Error fetching companies:', error);
+    console.error('Error fetching members:', error);
   }
 }
 
-getCompanyData(url);
+getMemberData(url);
 
-const displayCompanies = (companies) => {
-  companies.forEach((company) => {
-    let companyDiv = document.createElement('section');
-    companyDiv.classList.add('company');
+const displayMembers = (members) => {
+  members.forEach((member) => {
+    let memberDiv = document.createElement('section');
+    memberDiv.classList.add('member');
 
     // Create elements for member information
     let nameElement = document.createElement('h2');
@@ -24,21 +24,23 @@ const displayCompanies = (companies) => {
     let phoneElement = document.createElement('p');
     let websiteElement = document.createElement('p');
     let membershipElement = document.createElement('p');
-    let otherInfoElement = document.createElement('p'); // change this
+    let otherInfoElement = document.createElement('p');
     let imageElement = document.createElement('img');
 
     // Assign text content and attributes
-    nameElement.textContent = company.name;
-    addressElement.textContent = `Address: ${company.address}`;
-    phoneElement.textContent = `Phone: ${company.phone}`;
-    websiteElement.innerHTML = `Website: <a href="${company.website}" target="_blank">${company.website}</a>`;
-    membershipElement.textContent = `Membership Level: ${company.membership_level}`;
+    nameElement.textContent = member.name;
+    addressElement.textContent = `Address: ${member.address}`;
+    phoneElement.textContent = `Phone: ${member.phone}`;
+    websiteElement.innerHTML = `Website:<a href="${member.website}" target="_blank">${member.website}</a>`;
+    websiteElement.classList.add('website');
+    membershipElement.textContent = `Membership Level: ${member.membership_level}`;
     membershipElement.classList.add('membership-level');
-    otherInfoElement.textContent = `Other Information: ${company.other_information}`;
+    otherInfoElement.textContent = `Other Information: ${member.other_information}`;
     otherInfoElement.classList.add('other');
-    imageElement.src = `${company.image}`;
-    imageElement.alt = `${company.name} Logo`;
+    imageElement.src = `${member.image}`;
+    imageElement.alt = `${member.name} Logo`;
     imageElement.width = "100";
+    imageElement.classList.add('images');
 
     // Append elements to memberDiv
     memberDiv.appendChild(nameElement);
