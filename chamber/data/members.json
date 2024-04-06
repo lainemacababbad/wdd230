@@ -5,7 +5,6 @@
           "address": "1672 SE Marine Dr, Vancouver, BC",
           "phone": "604-718-6434",
           "website": "https://www.visions.ca/",
-          "image": "/chamber/images/visionselectronic.png",
           "membership_level": "Silver",
           "other_information": "Specializes in consumer electronics."
       },
@@ -14,7 +13,6 @@
           "address": "1075 W Georgia St #2100, Vancouver, BC",
           "phone": "604-688-1221",
           "website": "http://www.guildyule.com/",
-          "image": "/chamber/images/guildyule.png",
           "membership_level": "Gold",
           "other_information": "Full-service law firm offering legal assistance."
       },
@@ -23,7 +21,6 @@
           "address": "1900 W 1st Ave, Vancouver, BC",
           "phone": "604-568-7783",
           "website": "http://www.befresh.ca/",
-          "image": "/chamber/images/befresh.png",
           "membership_level": "NP",
           "other_information": "Organic grocery store with locally sourced products."
       },
@@ -32,7 +29,6 @@
           "address": "1433 Cedar Cottage Mews, Vancouver, BC",
           "phone": "604-558-1551",
           "website": "https://www.anytimefitness.com/",
-          "image": "/chamber/images/anytimefitness.png",
           "membership_level": "Bronze",
           "other_information": "State-of-the-art gym with personal training services."
       },
@@ -41,7 +37,6 @@
           "address": "5555 Dunbar St,, Vancouver, BC",
           "phone": "604-362-0065",
           "website": "https://basilgreenlandscaping.com/vancouverlawncare/",
-          "image": "/chamber/images/basilgreen.png",
           "membership_level": "Gold",
           "other_information": "Professional landscaping and garden design services."
       },
@@ -50,7 +45,6 @@
           "address": "188 Milross Ave, Vancouver, BC",
           "phone": "604-505-4487",
           "website": "https://techinatux.ca/",
-          "image": "/chamber/images/tech.webp",
           "membership_level": "Platinum",
           "other_information": "IT consulting and software development company."
       },
@@ -59,7 +53,6 @@
           "address": "137 E Pender St, Vancouver, BC",
           "phone": "604-683-8816",
           "website": "https://jadedynasty-bc.com/?",
-          "image": "/chamber/images/jadedynasty.png",
           "membership_level": "Silver",
           "other_information": "Fine dining restaurant serving international cuisine."
       }

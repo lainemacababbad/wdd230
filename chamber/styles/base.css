@@ -351,51 +351,107 @@ main {
 /* Membership benefits column */
 /* ------------ end of join.html ---------- */
 
+/* Your existing CSS styles */
+
 /* ----------- start of directory.html ---------- */
+
+#directory {
+	background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
 .menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #cfe8e1;
   text-align: center;
 }
 
 .menu button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.menu button:hover {
-  background-color: #0056b3;
-}
-
-#members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.member {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-.member img {
-  width: 100%;
-  height: auto;
+  padding: 1rem;
+  font-weight: 700;
   margin-bottom: 10px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+  text-align: center;
+}
+
+.grid img {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+  margin: 0.1rem;
+}
+
+.grid h3 {
+  font-family: "Caveat", cursive;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+  margin-bottom: 10px;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none;
+}
+
+.list section h3 {
+  font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+  background-color: #cfe8e1;
+}
+
+img {
+  height: 75px;
+  max-width: 100%;
+}
+
+/* Additional styles for member cards and list items */
+.member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .member h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .member p {
   margin-bottom: 5px;
+  color: #666;
 }
 
 .member a {
@@ -407,12 +463,35 @@ main {
   text-decoration: underline;
 }
 
-.membership-level {
-  font-weight: bold;
+.list-view .member {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
-.other-info {
-  margin-top: 10px;
+/* CSS for grid view */
+.grid-view .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  max-width: 95%;
+  word-wrap: break-word;
 }
 
+/* CSS for list view */
+.list-view .member {
+  display: flex;
+  flex-direction: column;
+}
 /* ----------- end of directory.html ---------- */
+
+/* Your existing CSS styles */
+
+
