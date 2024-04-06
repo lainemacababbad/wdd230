@@ -17,6 +17,8 @@ hamburgerMenu.addEventListener("click", () => {
   hamburgerMenu.classList.toggle("open");
 });
 
+
+
 // json file
 document.addEventListener("DOMContentLoaded", function() {
   const companyInfoContainer = document.getElementById("company-info");
@@ -43,20 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
       companyInfoContainer.innerHTML = companyCardsHTML;
     })
     .catch(error => console.error('Error fetching data:', error));
-
-  // Check if it's Monday, Tuesday, or Wednesday
-  const currentDate = new Date();
-  const currentDay = currentDate.getDay();
-  if (currentDay >= 1 && currentDay <= 3) {
-    // Display the banner
-    document.querySelector(".banner").style.display = "block";
-  } else {
-    // Hide the banner
-    document.querySelector(".banner").style.display = "none";
-  }
 });
+
+// grid and list
 
 // banner
 document.querySelector(".banner__close").addEventListener("click", function () {
   document.querySelector(".banner").style.display = "none";
 });
+
