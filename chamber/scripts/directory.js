@@ -1,4 +1,4 @@
-const url = "data/members.json"; // Adjust the URL to point to your JSON file
+const url = "data/members.json";
 const membersContainer = document.getElementById('members');
 
 async function getMemberData(url) {
@@ -61,7 +61,6 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#members");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
@@ -69,7 +68,7 @@ gridbutton.addEventListener("click", () => {
 	display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	display.classList.add("list");

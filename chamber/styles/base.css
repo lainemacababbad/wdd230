@@ -352,63 +352,67 @@ main {
 /* ------------ end of join.html ---------- */
 
 /* ----------- start of directory.html ---------- */
-.business {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.business h2 {
-  text-align: center;
-}
-
 .menu {
   text-align: center;
 }
 
-.company {
-  margin-bottom: 20px;
+.menu button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.menu button:hover {
+  background-color: #0056b3;
+}
+
+#members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.member {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  
 }
 
-.company h3 {
+.member img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.member h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.company p {
+.member p {
   margin-bottom: 5px;
 }
 
-.company a {
+.member a {
   color: #007bff;
   text-decoration: none;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
-.company img {
-  width: 200px;
-  height: auto;
-  display: block;
-  margin-bottom: 15px;
+.member a:hover {
+  text-decoration: underline;
 }
 
-.company p.membership-level {
+.membership-level {
   font-weight: bold;
 }
 
-.company p.other-info {
+.other-info {
   margin-top: 10px;
 }
-
-.menu {
-  margin-bottom: 10px;
-}
-
-/* grid and list */
 
 /* ----------- end of directory.html ---------- */
