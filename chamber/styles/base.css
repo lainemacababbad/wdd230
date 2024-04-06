@@ -351,8 +351,6 @@ main {
 /* Membership benefits column */
 /* ------------ end of join.html ---------- */
 
-/* Your existing CSS styles */
-
 /* ----------- start of directory.html ---------- */
 
 #directory {
@@ -433,7 +431,6 @@ img {
   max-width: 100%;
 }
 
-/* Additional styles for member cards and list items */
 .member {
   background-color: #fff;
   border-radius: 8px;
@@ -491,7 +488,5 @@ img {
   flex-direction: column;
 }
 /* ----------- end of directory.html ---------- */
-
-/* Your existing CSS styles */
 
 
