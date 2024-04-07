@@ -72,8 +72,8 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Adjust the width as needed */
-    margin: 0 auto; /* This centers the form horizontally */
+    width: 100%;
+    margin: 0 auto;
   }
 
   .membership-benefits {

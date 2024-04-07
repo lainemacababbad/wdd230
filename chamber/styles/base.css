@@ -398,7 +398,7 @@ footer {
 .wf1 select {
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 1rem;
@@ -420,7 +420,7 @@ footer {
 }
 
 .wf1 input[type="submit"]:hover {
-  background-color: #2f3e46; /* Darken button on hover */
+  background-color: #2f3e46;
 }
 
 #timestamp-display {
@@ -434,20 +434,20 @@ footer {
 .membership-benefits {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
+  align-items: center;
 }
 
 .membership-benefit {
   width: 300px;
-  background-color: #f8f8f8; /* Light gray background */
+  background-color: #f8f8f8;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-bottom: 20px; /* Add some space between each benefit */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .membership-benefit h3 {
-  color: #354f52; /* Dark blue heading */
+  color: #354f52;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -470,9 +470,9 @@ footer {
 }
 
 .membership-benefit p {
-  color: #666; /* Gray text */
+  color: #666;
   font-size: 0.9rem;
-  margin-top: auto; /* Align paragraph content to bottom */
+  margin-top: auto;
 }
 
 /* ------------ end of join.html ---------- */
