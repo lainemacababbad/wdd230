@@ -13,6 +13,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: #0d1b2a;
   background-color: #fffcf2;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -77,7 +80,7 @@ header {
 
 #hero-image {
   height: auto;
-  width: 100%;
+  width: auto;
   opacity: 0.85;
 }
 
@@ -199,12 +202,12 @@ main {
 }
 
 .forecast-item img {
-  width: 40px; 
+  width: 40px;
 }
 
 .forecast-item p {
-  margin-top: 5px; 
-  font-size: 0.9em; 
+  margin-top: 5px;
+  font-size: 0.9em;
 }
 /* End of Weather */
 
@@ -220,7 +223,8 @@ main {
   overflow: scroll;
 }
 
-#events h2, #weather h2 {
+#events h2,
+#weather h2 {
   color: #2f3e46;
   font-size: 2em;
   margin-bottom: 20px;
@@ -264,7 +268,7 @@ main {
   background-color: #2f3e46;
   padding: 50px;
   margin: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 #company1,
@@ -276,7 +280,6 @@ main {
   color: #403d39;
 }
 
-
 footer {
   text-align: center;
   background: #2f3e46;
@@ -287,7 +290,7 @@ footer {
 
 /* ----------- start of discover.html ---------- */
 #hero {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .discover-container {
@@ -296,11 +299,11 @@ footer {
 }
 
 .sidebar {
-  border: 1px solid #ccc5b9;
-  border-top: 10px;
+  padding: 10px;
 }
 
-#demographics, .places {
+#demographics,
+#attractions {
   padding: 10px;
 }
 
@@ -310,19 +313,62 @@ footer {
   display: block;
 }
 
+#attractions h3 {
+  margin-bottom: 10px;
+}
+
+#attractions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#attractions li {
+  margin-bottom: 15px;
+}
+
+#attractions li strong {
+  font-weight: bold;
+}
+
+#attractions li::before {
+  content: "•";
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+#attractions li:last-child {
+  margin-bottom: 0;
+}
+
+.main-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5em;
+}
+
+.places {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+}
+
+.places:last-child {
+  margin-right: 0;
+}
+
 .places img {
   width: 100%;
+  height: auto;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
   display: block;
-  
 }
 
-.places h4 {
-  margin-top: 5px;
+.footer {
+  clear: both;
 }
 /* ----------- end of discover.html ---------- */
+
 
 /* ----------- start of join.html ---------- */
 .wf1 label {
@@ -354,7 +400,7 @@ main {
 /* ----------- start of directory.html ---------- */
 
 #directory {
-	background-color: #fff;
+  background-color: #fff;
   display: flex;
   justify-content: center;
 }
@@ -374,10 +420,10 @@ main {
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
 }
 
 .grid section {
@@ -488,5 +534,3 @@ img {
   flex-direction: column;
 }
 /* ----------- end of directory.html ---------- */
-
-

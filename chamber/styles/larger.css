@@ -43,21 +43,28 @@
   }
   
   .container3 {
-    grid-column: 1 / -1; /* Expand to cover all columns */
-    margin-top: 20px; /* Adjust margin as needed */
-    place-self: center; /* Center the container vertically and horizontally */
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    place-self: center;
   }
   
   /* for the discover.html */
   .discover-container {
     display: grid;
     grid-template-columns: 30% 70%;
+    place-items: center;
   }
-
+  
   .main-area {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
   }
+
+  .places h4 {
+    margin-top: -20px;
+  }
+
+ 
 
   /* for the join.html */
   
