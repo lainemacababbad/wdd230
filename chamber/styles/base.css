@@ -423,9 +423,14 @@ footer {
   background-color: #2f3e46; /* Darken button on hover */
 }
 
+#timestamp-display {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
 
 /* Membership benefits column */
-/* Membership Information */
 .membership-benefits {
   display: flex;
   flex-direction: column;
