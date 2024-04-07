@@ -35,7 +35,7 @@
 <div id="hero">
     <img
         id="hero-image"
-        src="/wdd230/chamber/images/vancouver.webp"
+        src="/chamber/images/vancouver.webp"
         alt="Picture of Vancouver Downtown"
         loading="lazy"
       />
@@ -44,7 +44,48 @@
         <button id="cta">JOIN US</button>
     </div>
 </div>
-<main>
+<main class="formpage">
+    <!-- start of form -->
+    <form method="get" action="thankyou.html" class="wf1">
+        <div><p>JOIN THE CHAMBER TODAY!</p></div>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:*
+                <input type="text" required name="fname" id="fname"/></label>
+            <label for="lname">Last Name:*
+                <input type="text" required name="lname" id="lname"/></label>
+            <label for="position">Title/Position:
+                <input type="text" name="position" id="position" pattern="^[a-zA-Z -]{7,}$"/></label>
+            <label for="email">Email Address:*
+                <input type="email" required name="email" id="email" placeholder="Please enter a valid email address"
+                       pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/></label>
+            <label for="phonenumber">Phone Number:*
+                <input type="tel" required name="phonenumber" id="phonenumber"/></label>
+            <label for="business">Business/Organization Name*
+                <input type="text" required name="organization" id="organization"/></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Membership</legend>
+            <label for="membership">Membership Level
+                <select name="membership" id="membership">
+                    <option value="">Please Select &#9662;</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Fields</legend>
+            <label for="business_description">Business/Organization Description
+                <textarea name="business_description" id="business_description"></textarea>
+            </label>
+            <div><input type="submit" value="Join The Chamber" /></div>
+        </fieldset>
+    </form>
+
     <!-- start of membership-benefits -->
     <div class="membership-benefits">
         <h1>Membership Information</h1>
@@ -87,50 +128,6 @@
         </div>
     </div>
     <!-- end of membership-benefits -->
-
-    <!-- start of form -->
-    <form method="get" action="thankyou.html" class="wf1">
-        <div><p>JOIN THE CHAMBER TODAY!</p></div>
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="fname">First Name:
-                <input type="text" required name="fname" id="fname"/></label>
-            <label for="lname">Last Name:
-                <input type="text" required name="lname" id="lname"/></label>
-            <label for="position">Title/Position:
-                <input type="text" name="position" id="position" pattern="^[a-zA-Z -]{7,}$"/></label>
-            <label for="email">Email Address:
-                <input type="email" name="email" id="email" placeholder="Please enter a valid email address"
-                       pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/></label>
-            <label for="phonenumber">Phone Number:
-                <input type="tel" required name="phonenumber" id="phonenumber"/></label>
-            <label for="business">Business/Organization Name
-                <input type="text" required name="organization" id="organization"/></label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Membership</legend>
-            <label for="membership">Membership Level
-                <select name="membership" id="membership">
-                    <option value="">Please Select &#9662;</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Additional Fields</legend>
-            <label for="business_description">Business/Organization Description
-                <textarea name="business_description" id="business_description"></textarea>
-            </label>
-            <label for="timestamp">Timestamp
-                <input type="hidden" name="timestamp" id="timestamp" value="<!-- JavaScript code to populate timestamp -->"/>
-            </label>
-            <div><input type="submit" value="Join The Chamber" /></div>
-        </fieldset>
-    </form>
 </main>
 <footer>
     <p id="year"></p>
